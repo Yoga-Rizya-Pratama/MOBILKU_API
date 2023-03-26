@@ -53,5 +53,3 @@ app.get("/", (req, res, next) => {
 });
 
 app.use("/user", user);
-
-exports.module = app;
