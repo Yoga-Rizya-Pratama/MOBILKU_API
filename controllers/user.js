@@ -40,7 +40,7 @@ exports.CREATE = (req, res, next) => {
     .then((result) => {
       const Data = new User({
         name: req.body.name,
-        tanggal_lahir: req.body.tanggal_lahir,
+        date: req.body.date,
         usia: req.body.usia,
         mobile: req.body.mobile,
         city: req.body.city,
@@ -82,7 +82,7 @@ exports.EDIT = (req, res, next) => {
     .then((result) => {
       const newData = {
         name: req.body.name,
-        tanggal_lahir: req.body.tanggal_lahir,
+        date: req.body.date,
         usia: req.body.usia,
         mobile: req.body.mobile,
         city: req.body.city,

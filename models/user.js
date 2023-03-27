@@ -8,7 +8,7 @@ const User = new Schema(
       type: String,
       required: true,
     },
-    tanggal_lahir: {
+    date: {
       type: String,
       required: true,
     },
