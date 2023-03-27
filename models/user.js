@@ -4,16 +4,16 @@ const Schema = mongoose.Schema;
 
 const User = new Schema(
   {
-    nama: {
+    name: {
       type: String,
       required: true,
     },
-    tanggal: {
+    tanggal_lahir: {
       type: String,
       required: true,
     },
     usia: {
-      type: Number,
+      type: String,
       required: true,
     },
     mobile: {
@@ -28,12 +28,12 @@ const User = new Schema(
       type: String,
       required: true,
     },
-    image_500px: {
-      type: Object,
+    image1: {
+      type: String,
       required: true,
     },
-    image_1000px: {
-      type: Object,
+    image2: {
+      type: String,
       required: true,
     },
   },
