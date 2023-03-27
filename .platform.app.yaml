@@ -1,0 +1,4 @@
+name: express
+type: nodejs:12
+hooks:
+  build: npm install
