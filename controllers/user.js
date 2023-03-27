@@ -2,7 +2,19 @@ const User = require("../models/user");
 const sharp = require("../helper/processImage");
 const fs = require("fs");
 
-exports.GET = (req, res, next) => {};
+exports.GET = (req, res, next) => {
+  User.find()
+    .then((data) => {
+      res.status(200).json({
+        data,
+      });
+    })
+    .catch((error) => res.json({ error }));
+};
+
+exports.GETONE = (req, res, next) => {
+  User.findOne({ _id: req.params.id });
+};
 
 exports.CREATE = (req, res, next) => {
   const inputFile = req.file;

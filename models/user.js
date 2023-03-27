@@ -32,7 +32,7 @@ const User = new Schema(
       type: Object,
       required: true,
     },
-    image_100px: {
+    image_1000px: {
       type: Object,
       required: true,
     },
