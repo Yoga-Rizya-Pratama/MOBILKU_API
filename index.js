@@ -9,7 +9,7 @@ require("dotenv");
 // DATABASE CONFIGURATION
 mongoose
   .connect(
-    `mongodb://seco:seco@ac-ixm2sjd-shard-00-00.jdpfnzu.mongodb.net:27017,ac-ixm2sjd-shard-00-01.jdpfnzu.mongodb.net:27017,ac-ixm2sjd-shard-00-02.jdpfnzu.mongodb.net:27017/?ssl=true&replicaSet=atlas-cmxyzd-shard-0&authSource=admin&retryWrites=true&w=majority`
+    `mongodb://127.0.0.1:27017/mobilku'`
   )
   .then(() => {
     console.log("successfully connected to database");
